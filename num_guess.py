@@ -7,12 +7,16 @@
 
 import constants
 
+# get the user guess
 number = int(input("Guess what number I am thinking of between 0 and 9: "))
 
 
 def main():
+    # check if guess is correct and display message
     if (number == constants.CORRECT_GUESS):
         print("You guessed correctly!")
+
+    # check if guess is incorrect and display message
     if (number != constants.CORRECT_GUESS):
         print("You guessed wrong")
 
